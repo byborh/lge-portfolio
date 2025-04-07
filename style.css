@@ -1,0 +1,109 @@
+:root {
+    --bg-main: #f8f1f4; /* rose gris clair */
+    --primary: #c94f7c;
+    --secondary: #6c757d;
+    --card-bg: #ffffff;
+    --text-dark: #333;
+  }
+
+  /* Réinitialisation douce */
+  body {
+    background-color: var(--bg-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation */
+  .navbar {
+    background-color: #fff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .nav-link {
+    color: var(--secondary);
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #fbe5ec, #f1d9e0);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 95%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  header h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  header h4 {
+    color: var(--secondary);
+  }
+  
+  /* Cartes */
+  .card {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  }
+  
+  .card-title {
+    color: var(--primary);
+  }
+  
+  /* Listes */
+  .list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #fbe5ec;
+  }
+  
+  /* Liens */
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-top: 1px solid #e4d4dd;
+    border-radius: 12px;
+    color: var(--secondary);
+  }
+
+
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: #000 !important;      /* Texte en noir */
+    background-color: rgba(255, 255, 255, 0.6); /* Fond blanc semi-transparent pour lisibilité */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    display: inline-block;
+  }
