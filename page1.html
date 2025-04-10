@@ -5,58 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>page1</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                IA: Dilemmes du XXIe Siècle 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="page1.html">Article 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="page2.html">Article 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="page3.html">Article 3</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bibliographie.html">Bibliographie</a></li>
-                </ul>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="accueil.html">[Prénom Nom]</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="accueil.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="page1.html">Biographie</a></li>
+          <li class="nav-item"><a class="nav-link" href="page2.html">Expériences</a></li>
+          <li class="nav-item"><a class="nav-link" href="page3.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="bibliographie.html">Veille Techno</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+    <header>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>[Prénom Nom]</h1>
+          <h4>Développeur Fullstack — Portfolio 2025</h4>
         </div>
-    </nav>
-
-  <header>
-    <h1>Intelligence Artificielle : Dilemmes du XXIe Siècle</h1>
-    <h2 class="container text-center py-3">Les défis éthiques de l'Intelligence Artificielle</h2>
-  </header>
+        <div class="header-image">
+          <img src="images/img_of_me.jpg" alt="Photo de profil">
+        </div>
+      </div>
+    </header>
 
 
   <main class="container mt-4">
     <div class="row">
         <div class="col-md-8">
             <section>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h4 id="uneia" class="card-title">Biais algorithmique </h4>
-                        <article>
-                            <p class="p1">
-                              Alain Chatriot souligne que « les systèmes d’intelligence artificielle peuvent reproduire voire amplifier des discriminations existantes, faute d’un encadrement éthique rigoureux ». Nous pouvons observer cela dans plusieurs domaines.
-                            </p>
-                            <p class="p1">
-                              Prenons l’exemple dans la justice et comment l’IA peut les interpréter. 
-                              L’IA est utilisée pour prédire, ou aider à  la prise de décision et se base sur des données passées. C’est à dire que s’il y a déjà eu énormément d'arrestations dans certains quartiers, l’IA reprend ces biais et les reproduit. 
-                            </p>
-                            <p class="p1">
-                              Nous remarquons ces phénomènes dans le recrutement également. De plus en plus d’entreprises, d’universités utilisent les IAs pour trier les CVs ou évaluer les candidats. Ces systèmes sont souvent entraînés sur les profils de personnes déjà embauchées dans le passé. Résultat : si l’entreprise a historiquement favorisé certains profils (hommes, blancs, diplômés de certaines écoles...), l’IA va apprendre à faire pareil. Par exemple, il peut y avoir des algorithmes qui rejettent automatiquement des CVs avec des prénoms étrangers ou accordent plus d’importance à certaines écoles même si le niveau du candidat n’est pas vraiment conséquent. En plus, on ne sait pas réellement sur quels critères ces IAs prennent leurs décisions. 
-                            </p>
-                        </article>
-                    </div>
-                    
+              <div class="card-body">
+                <h4 id="uneia" class="card-title">Affichage du fichier Excel</h4>
+                <div id="xlsx-table">
+                  <!-- Le tableau sera injecté ici par JavaScript -->
                 </div>
+              </div>
+              
+              
+              
 
                 <div class="card mb-4">
                   <div class="card-body">
@@ -147,7 +143,24 @@
 
   <!-- Ne rien écrire après cette limite -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+    // Fonction pour afficher le fichier Excel en tableau
+    function displayExcel(filePath) {
+      fetch(filePath)
+        .then(response => response.arrayBuffer())
+        .then(data => {
+          const workbook = XLSX.read(data, { type: 'array' });
+          const sheet = workbook.Sheets[workbook.SheetNames[0]]; // Lire la première feuille
+          const html = XLSX.utils.sheet_to_html(sheet);
+          document.getElementById('xlsx-table').innerHTML = html;
+        })
+        .catch(err => console.error('Erreur lors du chargement du fichier Excel:', err));
+    }
+
+    window.onload = function() {
+      displayExcel('xlsx/xlsx.xlsx');
+    }
   </script>
 
 </body>
