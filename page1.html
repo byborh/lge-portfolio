@@ -30,7 +30,7 @@
     <header>
       <div class="header-content">
         <div class="header-text">
-          <h1>[Prénom Nom]</h1>
+          <h1>Beibarys RAKHYMBERDI</h1>
           <h4>Développeur Junior Fullstack — BTS SIO</h4>
         </div>
         <div class="header-image">
@@ -62,31 +62,31 @@
             </thead>
             <tbody>
               <tr>
-                <td>Collaboration avec les équipes marketing pour améliorer la présence de l'organisation sur les réseaux sociaux.</td>
-                <td>Création de contenus pour LinkedIn, Instagram, Twitter, et gestion de la stratégie publicitaire.</td>
-                <td>Analyse de la performance des campagnes de publicité en ligne.</td>
-                <td>Évaluation des indicateurs de performance tels que le taux de clics, la conversion, et le retour sur investissement.</td>
-                <td>Suivi des nouvelles technologies pour optimiser la visibilité et la performance des campagnes digitales.</td>
-                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
-                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
+                <td>Maison des Ligues - php - site dynamique.</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
               </tr>
               <tr>
-                <td>Développement de la stratégie de contenu, en prenant en compte les tendances du marché et les attentes du public.</td>
-                <td>Gestion des partenariats et coordination des actions entre les différentes équipes marketing.</td>
-                <td>Recherches sur l'impact des nouvelles tendances SEO sur les résultats des campagnes.</td>
-                <td>Suivi des retours et feedbacks des clients pour améliorer la communication digitale.</td>
-                <td>Veille concurrentielle pour identifier de nouvelles solutions de communication numérique.</td>
-                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
-                <td>Analyse des performances financières des campagnes par rapport aux objectifs définis.</td>
+                <td>Butterfly Packaging</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
               </tr>
               <tr>
-                <td>Création de supports visuels pour enrichir les publications en ligne et augmenter l’engagement.</td>
-                <td>Coordination avec les équipes créatives pour le design des campagnes publicitaires.</td>
-                <td>Mesure de la portée et de l'impact des actions sur les réseaux sociaux.</td>
-                <td>Analyse des données à partir des plateformes publicitaires pour ajuster les stratégies en temps réel.</td>
-                <td>Suivi des innovations dans l’automatisation de la gestion des campagnes.</td>
-                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
-                <td>Présentation des résultats financiers des actions digitales aux parties prenantes.</td>
+                <td>Datte</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
               </tr>
             </tbody>
           </table>
@@ -98,31 +98,49 @@
     </div>
 </main>
 
-  <footer class="container text-center py-3">
-    <p>Ce site a été créé par Beibarys Rakhymberdi</p>
-  </footer>
+<footer class="bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container text-center text-md-left">
+    <div class="row">
+
+      <!-- À propos -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">À propos</h5>
+        <p>
+          Développeur passionné, bâtisseur de solutions modernes et efficaces. Toujours à la recherche de nouveaux défis pour faire progresser le monde, une ligne de code à la fois.
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">Liens utiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="page3.html" class="text-light text-decoration-none">Projets</a></li>
+          <li><a href="pdf/cv.pdf" class="text-light text-decoration-none">Mon CV</a></li>
+          <li><a href="mailto:brakhymberdi@gmail.com" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">Suivez-moi</h5>
+        <a href="https://github.com/byborh" class="text-light me-3" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/beibarys-rakhymberdi-660b482a8/" class="text-light me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:brakhymberdi@email.com" class="text-light"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+
+    <!-- Mention légale -->
+    <div class="text-center pt-3 mt-3 border-top border-secondary">
+      <p class="mb-0">© 2025 — Développé avec ❤️ par <strong>Rh Beibarys</strong>. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Ne rien écrire après cette limite -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-
-    // Fonction pour afficher le fichier Excel en tableau
-    function displayExcel(filePath) {
-      fetch(filePath)
-        .then(response => response.arrayBuffer())
-        .then(data => {
-          const workbook = XLSX.read(data, { type: 'array' });
-          const sheet = workbook.Sheets[workbook.SheetNames[0]]; // Lire la première feuille
-          const html = XLSX.utils.sheet_to_html(sheet);
-          document.getElementById('xlsx-table').innerHTML = html;
-        })
-        .catch(err => console.error('Erreur lors du chargement du fichier Excel:', err));
-    }
-
-    window.onload = function() {
-      displayExcel('xlsx/xlsx.xlsx');
-    }
   </script>
 
 </body>

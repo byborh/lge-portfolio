@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 :root {
     --bg-main: #f8f1f4; /* rose gris clair */
     --primary: #b2d8d8;
@@ -313,4 +317,24 @@ thead th {
 .table-container {
   max-height: 800px;
   overflow-y: auto;
+}
+
+/* Couleur personnalisée pour le bouton */
+.custom-btn {
+  background-color: #b2d8d8; /* Rouge */
+  color: white; /* Texte en blanc */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espace autour du texte */
+  text-decoration: none; /* Enlever la ligne de soulignement */
+  display: inline-block; /* Pour que le bouton soit en ligne avec le contenu */
+  align-items: center;
+  display: inline-block; /* Assurer que le bouton est un bloc inline */
+}
+
+.custom-btn:hover {
+  color: black;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
