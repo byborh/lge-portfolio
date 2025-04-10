@@ -214,3 +214,103 @@ iframe {
       font-size: 1rem;
     }
     
+
+
+
+    .section-title {
+      color: #0aafaf;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .step {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .step img {
+      width: 40%;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .step-content {
+      max-width: 55%;
+    }
+    .step h5 {
+      color: #0aafaf;
+      font-size: 1.5rem;
+    }
+    .step-text {
+      font-size: 1.1rem;
+    }
+    .step-number {
+      font-size: 2rem;
+      color: #b2d8d8;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    .btn-step {
+      margin-top: 15px;
+      background-color: #b2d8d8;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    
+
+
+
+
+/* Style général pour le tableau */
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+th {
+  background-color: #b2d8d8;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  word-wrap: break-word;
+  max-width: 200px;
+  text-align: left;
+}
+
+/* Style pour les lignes alternées */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Style pour la ligne de titre */
+thead th {
+  background-color: #0056b3;
+  color: black;
+}
+
+/* Contrôle de la taille du tableau */
+.table-container {
+  max-height: 800px;
+  overflow-y: auto;
+}

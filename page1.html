@@ -11,14 +11,14 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="accueil.html">[Prénom Nom]</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="accueil.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="page1.html">Biographie</a></li>
+          <li class="nav-item"><a class="nav-link" href="page1.html">Tableau de synthèse</a></li>
           <li class="nav-item"><a class="nav-link" href="page2.html">Expériences</a></li>
           <li class="nav-item"><a class="nav-link" href="page3.html">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="bibliographie.html">Veille Techno</a></li>
@@ -31,7 +31,7 @@
       <div class="header-content">
         <div class="header-text">
           <h1>[Prénom Nom]</h1>
-          <h4>Développeur Fullstack — Portfolio 2025</h4>
+          <h4>Développeur Junior Fullstack — BTS SIO</h4>
         </div>
         <div class="header-image">
           <img src="images/img_of_me.jpg" alt="Photo de profil">
@@ -42,96 +42,58 @@
 
   <main class="container mt-4">
     <div class="row">
-        <div class="col-md-8">
-            <section>
-              <div class="card-body">
-                <h4 id="uneia" class="card-title">Affichage du fichier Excel</h4>
-                <div id="xlsx-table">
-                  <!-- Le tableau sera injecté ici par JavaScript -->
-                </div>
-              </div>
-              
-              
-              
+      <div class="container">
+        <h1 class="text-center my-4">Tableau Excel-like avec Bootstrap</h1>
+        
+        <!-- Tableau Responsive -->
+        <div class="table-container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">AP / Projets</th>
 
-                <div class="card mb-4">
-                  <div class="card-body">
-                      <h4 id="uneia" class="card-title">Manque de transparence </h4>
-                      <article>
-                          <p class="p1">
-                            Dans le livre La Déferlante, les auteurs expliquent que « la capacité d’expliquer pourquoi une IA a pris une décision devient de plus en plus difficile à mesure que ses modèles deviennent complexes ». Ce « trou noir algorithmique » empêche les citoyens de comprendre ou contester les décisions.
-                          </p>
-                          <p class="p1">
-                            Ainsi, nous pouvons comprendre que plus une intelligence artificielle utilise des modèles puissants et complexes, moins on comprend comment elle arrive à ses décisions. En résultat, même les experts dans ce domaine ne peuvent pas réellement expliquer pourquoi une IA a refusé ou a accepté un CV.
-                          </p>
-                          <p class="p1">
-                            Nous pouvons également remarquer que le terme “trou noir” désigne un manque total de transparence. Cela pose donc un problème: comment contester une décision si on ne sait pas pourquoi elle a été prise?
-                          </p>
-                      </article>
-                  </div>
-                </div>
-
-                <div class="card mb-4">
-                  <div class="card-body">
-                      <h4 id="uneia" class="card-title">Autonomie des systèmes</h4>
-                      <article>
-                          <p class="p1">
-                            Francis Donnat insiste dans son article sur les risques liés à l’autonomisation de certaines IA. Il dit que « l’intervention humaine dans les processus automatisés devient de plus en plus marginale, voire symbolique ». Par là, on peut dire que dans de nombreux systèmes automatisés, comme l’IA, les humains n’interviennent presque plus. Ils ne sont là que pour valider automatiquement ce que l’IA a décidé, sans vraiment analyser ni remettre en question la décision. Avec cela on ne sait plus vraiment qui est responsable en cas d’erreur: l’IA? L'humain? ou alors l’entreprise? 
-                          </p>
-                      </article>
-                  </div>
-                </div>
-
-            </section>
+                <th scope="col">▸ Gérer le patrimoine informatique</th>
+                <th scope="col">▸ Répondre aux incidents et aux demandes d’assistance et d’évolution</th>
+                <th scope="col">▸ Développer la présence en ligne de l’organisation</th>
+                <th scope="col">▸ Travailler en mode projet</th>
+                <th scope="col">▸ Mettre à disposition des utilisateurs un service informatique</th>
+                <th scope="col">▸ Organiser son développement professionnel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Collaboration avec les équipes marketing pour améliorer la présence de l'organisation sur les réseaux sociaux.</td>
+                <td>Création de contenus pour LinkedIn, Instagram, Twitter, et gestion de la stratégie publicitaire.</td>
+                <td>Analyse de la performance des campagnes de publicité en ligne.</td>
+                <td>Évaluation des indicateurs de performance tels que le taux de clics, la conversion, et le retour sur investissement.</td>
+                <td>Suivi des nouvelles technologies pour optimiser la visibilité et la performance des campagnes digitales.</td>
+                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
+                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
+              </tr>
+              <tr>
+                <td>Développement de la stratégie de contenu, en prenant en compte les tendances du marché et les attentes du public.</td>
+                <td>Gestion des partenariats et coordination des actions entre les différentes équipes marketing.</td>
+                <td>Recherches sur l'impact des nouvelles tendances SEO sur les résultats des campagnes.</td>
+                <td>Suivi des retours et feedbacks des clients pour améliorer la communication digitale.</td>
+                <td>Veille concurrentielle pour identifier de nouvelles solutions de communication numérique.</td>
+                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
+                <td>Analyse des performances financières des campagnes par rapport aux objectifs définis.</td>
+              </tr>
+              <tr>
+                <td>Création de supports visuels pour enrichir les publications en ligne et augmenter l’engagement.</td>
+                <td>Coordination avec les équipes créatives pour le design des campagnes publicitaires.</td>
+                <td>Mesure de la portée et de l'impact des actions sur les réseaux sociaux.</td>
+                <td>Analyse des données à partir des plateformes publicitaires pour ajuster les stratégies en temps réel.</td>
+                <td>Suivi des innovations dans l’automatisation de la gestion des campagnes.</td>
+                <td>Évaluation des retours sur les campagnes pour ajuster la stratégie future.</td>
+                <td>Présentation des résultats financiers des actions digitales aux parties prenantes.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <aside class="col-md-4">
-            <div class="card">
-
-              <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/gpt.jpeg" class="d-block w-100" alt="Logo">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Generative Pre-trained Transformer</h5>
-                      <p>30 novembre 2022</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/copilot.jpeg" class="d-block w-100" alt="Logo">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Microsoft Copilot</h5>
-                      <p>7 février 2023</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/meta.png" class="d-block w-100" alt="Logo">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Chatbot Meta AI</h5>
-                      <p>11 décembre 2015</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-
-
-            </div>
-
-        </aside>
+      
 
     </div>
 </main>
