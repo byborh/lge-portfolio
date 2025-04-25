@@ -933,16 +933,159 @@
                 </td>
               </tr>
 
-              <!-- 📋 Todo List -->
+              <!-- 📝 Todo List Backend -->
               <tr>
-                <td style="cursor: pointer;" onclick="window.location.href='https://github.com/byborh/lge-da4-todolist-backend'">📋 Todo List</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+                <td style="cursor: pointer;" onclick="window.location.href='https://github.com/byborh/lge-da4-todolist-backend'">📝 Todo List Backend</td>
 
+                <!-- Cellule 1 (Gérer le patrimoine informatique) -->
+                <td>
+                  <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-todolist-patrimoine">
+                    X
+                  </button>
+
+                  <div class="modal fade" id="modal-todolist-patrimoine" tabindex="-1" aria-labelledby="modalLabel-todolist-patrimoine" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content shadow-lg rounded-4">
+                        <div class="modal-header bg-dark text-white">
+                          <h5 class="modal-title" id="modalLabel-todolist-patrimoine">📝 Todo List Backend – ▸ Gérer le patrimoine informatique</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table table-hover align-middle text-center">
+                            <thead class="table">
+                              <tr>
+                                <th>Sous-compétence</th>
+                                <th>Description de l'action</th>
+                                <th>Illustration(s)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>▸ Vérifier les conditions de la continuité d’un service informatique</td>
+                                <td>
+                                  J’ai conçu une architecture modulaire et maintenable avec les principes SOLID et j’ai mis en place des tests unitaires automatisés afin d’assurer la robustesse du service dans le temps.
+                                </td>
+                                <td>
+                                  <div class="d-flex flex-wrap justify-content-center gap-2">
+                                    <img src="./images/todolist1.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist3.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist4.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td></td>
+
+                <!-- Cellule 3 (Travailler en mode projet) -->
+                <td></td>
+
+                <!-- Cellule 4 (Mettre à disposition un service) -->
+                <td>
+                  <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-todolist-service">
+                    X
+                  </button>
+
+                  <div class="modal fade" id="modal-todolist-service" tabindex="-1" aria-labelledby="modalLabel-todolist-service" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content shadow-lg rounded-4">
+                        <div class="modal-header bg-dark text-white">
+                          <h5 class="modal-title" id="modalLabel-todolist-service">📝 Todo List Backend – ▸ Mettre à disposition un service informatique</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table table-hover align-middle text-center">
+                            <thead class="table">
+                              <tr>
+                                <th>Sous-compétence</th>
+                                <th>Description de l'action</th>
+                                <th>Illustration(s)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>▸ Réaliser les tests d’intégration et d’acceptation d’un service</td>
+                                <td>
+                                  J’ai mis en place des tests d’intégration avec JUnit et MockMvc pour m'assurer que les fonctionnalités comme la création de notes ou d’utilisateurs fonctionnent correctement dans le backend.
+                                </td>
+                                <td>
+                                  <div class="d-flex flex-wrap justify-content-center gap-2">
+                                    <img src="./images/todolist.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist4.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <!-- Cellule 5 -->
+                <td></td>
+
+                <!-- Cellule 6 (Organiser son développement professionnel) -->
+                <td>
+                  <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-todolist-professionnel">
+                    X
+                  </button>
+
+                  <div class="modal fade" id="modal-todolist-professionnel" tabindex="-1" aria-labelledby="modalLabel-todolist-professionnel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content shadow-lg rounded-4">
+                        <div class="modal-header bg-dark text-white">
+                          <h5 class="modal-title" id="modalLabel-todolist-professionnel">📝 Todo List Backend – ▸ Organiser son développement professionnel</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table table-hover align-middle text-center">
+                            <thead class="table">
+                              <tr>
+                                <th>Sous-compétence</th>
+                                <th>Description de l'action</th>
+                                <th>Illustration(s)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>▸ Mettre en place son environnement d’apprentissage personnel</td>
+                                <td>
+                                  J’ai construit un environnement complet avec Java, Spring Boot, TDD, et Design Patterns pour apprendre à structurer proprement un projet backend et renforcer mes compétences en architecture logicielle.
+                                </td>
+                                <td>
+                                  <div class="d-flex flex-wrap justify-content-center gap-2">
+                                    <img src="./images/todolist1.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist2.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist3.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                    <img src="./images/todolist4.png" class="img-thumbnail img-clickable" style="width: 120px;">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
